@@ -8,9 +8,9 @@
 
 * [Python](#python)
 
-* [PowerBI](#ack)
+* [PowerBI](#powerbi)
 
-* [SQL](#ack)
+* [SQL](#sql)
 
 ---
 
