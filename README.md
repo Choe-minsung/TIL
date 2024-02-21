@@ -16,6 +16,13 @@
 
 ### Python
 
+- [algorithm](python/python.md)
+
+
 ### PowerBI
 
+- [how-to](powerbi/powerbi.md)
+
 ### SQL
+
+- [data-handling](sql/sql.md)
