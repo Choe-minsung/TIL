@@ -21,9 +21,10 @@
 
 ### PowerBI
 
-- [how-to](powerbi/practice.md)
+- [how-to](powerbi/how-to.md)
+- [practice](powerbi/practice.md)
 
 ### SQL
 
-- [practice](sql/handling.md)
+- [practice](sql/practice.md)
 - [with](sql/with.md)
