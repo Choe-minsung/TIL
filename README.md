@@ -16,15 +16,15 @@
 
 ### Python
 
-- [algorithm](python/algorithm.md)
+- [Algorithm](python/algorithm.md)
 
 
 ### PowerBI
 
-- [how-to](powerbi/how-to.md)
-- [practice](powerbi/practice.md)
+- [How-to](powerbi/how-to.md)
+- [Practice](powerbi/practice.md)
 
 ### SQL
 
-- [practice](sql/practice.md)
-- [with](sql/with.md)
+- [Practice](sql/practice.md)
+- [With](sql/with.md)
