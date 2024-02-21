@@ -6,8 +6,16 @@
 
 ### Categories
 
-* [Ack](#ack)
+* [Python](#python)
 
-* [Ack](#ack)
+* [PowerBI](#ack)
 
-* [Ack](#ack)
+* [SQL](#ack)
+
+---
+
+### Python
+
+### PowerBI
+
+### SQL
