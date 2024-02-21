@@ -25,4 +25,5 @@
 
 ### SQL
 
-- [data-handling](sql/handling.md)
+- [practice](sql/handling.md)
+- [with](sql/with.md)
