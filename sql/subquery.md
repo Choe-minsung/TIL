@@ -37,6 +37,7 @@ FROM (
 
 3. SELECT 절 : **스칼라 서브쿼리** (Scalar Subquery)
 - 1개의 행 값만 반환
+- 2개 이상의 값 반환시 err : 'Subquery returns more than 1 row'
 
 ```sql
 SELECT D.deptno, (SELECT MIN(empno) FROM EMP WHERE deptno = D.deptno) as EMPNO 
@@ -47,33 +48,30 @@ ORDER BY D.DEPTNO;
 
 ___
 
-### 문제예시 - [`상품을 구매한 회원 비율 구하기`](https://school.programmers.co.kr/learn/courses/30/lessons/131534) (Programmers)
+### 문제예시 - [`대여 횟수가 많은 자동차들의 월별 대여 횟수 구하기`](https://school.programmers.co.kr/learn/courses/30/lessons/151139) (Programmers)
 ```sql
 
-# cte : 2021년에 가입한 회원 테이블
-WITH CTE AS (
-    SELECT O.USER_ID, O.SALES_AMOUNT, DATE_FORMAT(O.SALES_DATE, '%Y-%m-%d') AS SALES_DATE
-        FROM USER_INFO AS I
-        JOIN ONLINE_SALE AS O ON I.USER_ID = O.USER_ID
-        WHERE YEAR(I.JOINED) = 2021
-)
+# where 절 subquery : 중첩 서브쿼리 (Nested Subquery)
 
-# cte 확인
-SELECT *
-    FROM CTE;
-    
-# main query
-SELECT YEAR(SALES_DATE) AS YEAR, MONTH(SALES_DATE) AS MONTH,
-        COUNT(DISTINCT(USER_ID)) AS PUCHASED_USERS,
-        ROUND(COUNT(DISTINCT(USER_ID)) / (SELECT COUNT(*) FROM USER_INFO WHERE JOINED LIKE '2021%'), 1) AS PUCHASED_RATIO
-    FROM CTE
-    GROUP BY YEAR, MONTH
-    ORDER BY YEAR, MONTH;
+SELECT MONTH(START_DATE) AS MONTH, CAR_ID,
+        COUNT(*) AS RECORDS
+    FROM CAR_RENTAL_COMPANY_RENTAL_HISTORY
+    WHERE CAR_ID IN (SELECT CAR_ID
+                     FROM CAR_RENTAL_COMPANY_RENTAL_HISTORY
+                     WHERE START_DATE BETWEEN '2022-08-01' AND '2022-10-31'
+                     GROUP BY CAR_ID
+                     HAVING COUNT(*) >= 5)
+            AND START_DATE BETWEEN '2022-08-01' AND '2022-10-31'
+    GROUP BY MONTH, CAR_ID
+    HAVING COUNT(*) > 0
+    ORDER BY MONTH, CAR_ID DESC;
 ```
-1. with 문으로 CTE 가상테이블 생성
-2. main query에 FROM 절에 CTE 테이블 불러오기
-3. SELECT 절 속 subquery 사용하여 USER_INFO 테이블의 가입년도가 2021년인 모든 행 갯수 반환
-4. sol
+1. 전체 행 갯수 RECORDS 컬럼 정의
+2. where 절에 대여 시작일 기준 2022년 8월 ~ 2022년 10월까지 총 대여 횟수가 5회 이상인 car_id 반환 중첩 서브쿼리 사용
+3. where 절에 대여 시작일 기준 2022년 8월 ~ 2022년 10월까지 총 대여 횟수가 5회 이상인 조건 삽입
+4. GROUP BY 절에 대여시작달, car_id HAVING 조건에 특정 월의 총 대여 횟수가 0인 경우 결과에서 제외
+5. 정렬
+6. sol
 
 
 
