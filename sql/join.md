@@ -5,55 +5,31 @@
 
 ### Join 
 
-1. 하나의 쿼리문안의 또 다른 쿼리문
-2. 괄호로 감싸 사용, **비교연산자** 사용가능, ORDER BY 정렬 사용 x
-3. 메인쿼리가 서브쿼리를 포함 (**종속관계**)
-4. 쿼리 구조화시켜 가독성 o
+1. 두개의 테이블 연결시켜 원하는 데이터 추출
+2. Outer Table (Pk) **1 : M** Inner Table (FK)
 
 
 ### 구조
 
 1. **Nested Loop Join** : 중첩 for문 역할
-- OLTP (Online Transaction Processing, 정교한 소규모 데이터 높은빈도 처리) 환경에 적절
+- **OLTP** (Online Transaction Processing, 정교한 소규모 데이터 높은빈도 처리) 환경에 적절
 - Outer Table(소량 데이터) **1 : M** Inner Table(다량 데이터)
 - Inner Table의 index 걸려있지 않으면 비효율적 (full scan 해야함)
 
-```sql
-SELECT name, height 
-FROM USER_T
-WHERE height > (SELECT height FROM USER_T WHERE name IN ('김경호'));
-
-```
 
 2. **Sort Merge Join**
 - 두 테이블을 join 컬럼 기준으로 PGA(Program Global Area) 영역 내에서 빠르게 정렬 후 join
 - Inner Table에 index 걸려있지 않을때 사용
-- Range Join (<-> Equal Join) 에 사용
+- **Range Join** (<-> Equal Join) 에 사용
 - Table Random Access (데이터 건수 감소, 큰 부하) 발생 x, 성능에 유리
 
-```sql
-SELECT name, salary
-FROM (
-  SELECT *
-  FROM employee AS E
-  WHERE E.office_worker = '사원'
-  ) AS SUB;
-
-```
 
 3. **Hash Join** : 대용량 테이블 join, Batch (일괄처리) 시 사용
-- OLAP (Online Analytical Processing, 대규모 데이터 낮은빈도 처리) 환경에 적절
+- **OLAP** (Online Analytical Processing, 대규모 데이터 낮은빈도 처리) 환경에 적절
 - Outer Table을 Hash 영역에 추가 (Build Input 취급)
 - Outer Table이 join 컬럼 기준으로 Hash Function 적용 (join 컬럼 중복값 없을수록 유리)
 - Outer Table 크기 작을수록 유리
 - Table Random Access (데이터 건수 감소, 큰 부하) 발생 x, 성능에 유리
-
-```sql
-SELECT D.deptno, (SELECT MIN(empno) FROM EMP WHERE deptno = D.deptno) as EMPNO 
-FROM DEPT AS D
-ORDER BY D.DEPTNO;
-
-```
 
 ___
 
