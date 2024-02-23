@@ -36,27 +36,45 @@ ___
 ### 문제예시 - [`특정 기간동안 대여 가능한 자동차들의 대여비용 구하기`](https://school.programmers.co.kr/learn/courses/30/lessons/157339) (Programmers)
 ```sql
 
-# where 절 subquery : 중첩 서브쿼리 (Nested Subquery)
-
-SELECT MONTH(START_DATE) AS MONTH, CAR_ID,
-        COUNT(*) AS RECORDS
+# 가상테이블 생성
+WITH CTE1 AS (
+    SELECT *
+    FROM CAR_RENTAL_COMPANY_CAR
+    WHERE CAR_TYPE IN ('세단', 'SUV')
+    ),
+    
+    CTE2 AS (
+    SELECT *
     FROM CAR_RENTAL_COMPANY_RENTAL_HISTORY
-    WHERE CAR_ID IN (SELECT CAR_ID
-                     FROM CAR_RENTAL_COMPANY_RENTAL_HISTORY
-                     WHERE START_DATE BETWEEN '2022-08-01' AND '2022-10-31'
-                     GROUP BY CAR_ID
-                     HAVING COUNT(*) >= 5)
-            AND START_DATE BETWEEN '2022-08-01' AND '2022-10-31'
-    GROUP BY MONTH, CAR_ID
-    HAVING COUNT(*) > 0
-    ORDER BY MONTH, CAR_ID DESC;
+    WHERE START_DATE > '2022-11-30' OR END_DATE < '2022-11-01'
+    )
+
+# CTE 확인
+SELECT *
+    FROM CTE1;
+    
+SELECT *
+    FROM CTE2;
+
+# main query
+SELECT a.CAR_ID AS CAR_ID, a.CAR_TYPE AS CAR_TYPE,
+    ROUND(IF(DATEDIFF(b.END_DATE, b.START_DATE) + 1 >= 90, a.DAILY_FEE * 30 * 0.9,
+       IF(DATEDIFF(b.END_DATE, b.START_DATE) + 1 >= 30, a.DAILY_FEE * 30 * 0.93,
+        IF(DATEDIFF(b.END_DATE, b.START_DATE) + 1 >= 7, a.DAILY_FEE * 30 * 0.95, a.DAILY_FEE * 30))), 0) AS FEE
+    FROM CTE1 AS a
+    JOIN CTE2 AS b ON a.CAR_ID = b.CAR_ID
+    GROUP BY a.CAR_ID
+    HAVING FEE BETWEEN 500000 AND 1999999
+    ORDER BY FEE DESC, a.CAR_TYPE, a.CAR_ID DESC;
+    
+
+
 ```
-1. 전체 행 갯수 RECORDS 컬럼 정의
-2. where 절에 대여 시작일 기준 2022년 8월 ~ 2022년 10월까지 총 대여 횟수가 5회 이상인 car_id 반환 중첩 서브쿼리 사용
-3. where 절에 대여 시작일 기준 2022년 8월 ~ 2022년 10월까지 총 대여 횟수가 5회 이상인 조건 삽입
-4. GROUP BY 절에 대여시작달, car_id HAVING 조건에 특정 월의 총 대여 횟수가 0인 경우 결과에서 제외
-5. 정렬
-6. sol
+1. With 문으로 조건1(car_type이 '세단' or 'SUV'), 조건2(2022/11/01 ~ 2022/11/30에 대여기록이 없는) 에 맞는 테이블 각각 생성
+2. FEE 컬럼 생성 : 각 대여기간에 따른 할인율 계산
+3. car_id로 그룹핑, HAVING 조건절에 컬럼 별칭으로 FEE 조건 입력 (where 절에는 컬럼별칭으로 연산 불가)
+4. 정렬
+5. sol
 
 
 
