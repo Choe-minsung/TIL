@@ -19,10 +19,10 @@
 - [Algorithm](python/algorithm.md)
 
 
-### PowerBI
+### Tableau
 
-- [How-to](powerbi/how-to.md)
-- [Practice](powerbi/practice.md)
+- [How-to](tableau/how-to.md)
+- [Practice](tableau/practice.md)
 
 ### SQL
 
