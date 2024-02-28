@@ -24,6 +24,12 @@
 2. 수치값 (측정값) : 행으로 사용 (집계, 평균 등) 
 <img width="152" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/eb922ae6-26f1-4fa3-84c6-7a7f58f43462">
 
+3. 날짜컬럼의 **불연속형(파란색)** : '월'을 범주값으로 보고 통합하여 계산, 날짜컬럼 우클릭 시 위쪽
+<img width="843" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/cef89fd5-c136-4e09-be7f-79f08aad1679">
+
+4. 날짜컬럼의 **연속형(초록색)** : **병렬차트**에 필수작업! 모든 '월'을 각각 계산, 날짜컬럼 우클릭 시 아래쪽
+<img width="847" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/b980488c-2970-4df4-a114-86da25f1c391">
+
 
 ### 데이터 결합 (컬럼 추가)
 - **관계** : 각각 테이블 더블클릭
@@ -46,7 +52,7 @@
 1. 1개 테이블 더블클릭 - 바로 아래 다른 테이블 드랍
 2. '새 유니온' 클릭 - 2개 테이블 넣기
 
-### 시각화
+### 차트 기본
 - **차트 그리기**
 1. 범주컬럼 더블클릭 or '열'에 드랍
 2. 수치컬럼 더블클릭 or '마크-레이블' or '행'에 드랍
@@ -63,3 +69,9 @@
 3. '마크-레이블'에 원하는 컬럼 드랍 : ex) 막대에 (제품카테고리)명 레이블, (매출)값 레이블 표시, 여러 레이블 순서('레이블'-'텍스트'-'...'), 레이블 표시 위치 (막대 위, 막대 안, 레이블방향 등)
 4. 레이블을 백분율로 : '행' 컬럼 우클릭 - '퀵 테이블 계산' - 구성 비율 - '테이블 계산 편집' - 테이블(아래로) - ctrl 누른 채 레이블에도 추가
 <img width="966" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/aec39f47-7c4c-4dd7-bafa-42bfb8848a39">
+
+### 병렬막대그래프
+1. '열'에 날짜컬럼(우클릭으로 원하는 '년'or'월'or'일' 만 추출하여 드랍) + 측정값이름('행'이 2개이므로 각각의 레이블 달기 위해), '행'에 할인, 매출
+<img width="962" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/11e5aff1-08c8-48f1-9f78-f3d00decada6">
+2. '행'이 2개이므로 병렬로 표현하기 위해 1개의 행을 우클릭 - '이중축'
+<img width="964" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/f53e195b-6321-4422-a323-d2fc87d77e84">
