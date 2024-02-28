@@ -25,3 +25,10 @@
 
 - 데이터 결합 (join) : 1개의 테이블 더블클릭 - 열기 - 2번째 테이블 더블클릭
 1. inner, left, right, outer 조인방식 설정 가능
+
+- 데이터 결합 (union)
+1. 시트에 union 할 2개의 테이블 불러오기 : 하단탭 데이터 원본에서 1개 테이블 더블클릭 - 하단탭 시트 1 - 상단탭 데이터 - 새 데이터원본 - 원하는 excel파일 - 다시 하단탭 데이터 원본에서 새 테이블 더블클릭 - 하단탭 시트 1  
+<img width="150" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/e6e1e299-b3a8-420e-a6d1-820b8889546e">
+
+2. 열설정, 마크(data) 설정 : 첫번째 테이블클릭 -  열로 설정할 컬럼 '열'에 드랍 - 두번째 테이블클릭 - 마크(data)로 설정할 컬럼 '마크 - 텍스트'에 드랍
+<img width="490" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/dbf6467d-1a4b-475b-a2a8-894bdc90f07d">
