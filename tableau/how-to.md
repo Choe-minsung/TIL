@@ -73,5 +73,6 @@
 ### 병렬막대그래프
 1. '열'에 날짜컬럼(우클릭으로 원하는 '년'or'월'or'일' 만 추출하여 드랍) + 측정값이름('행'이 2개이므로 각각의 레이블 달기 위해), '행'에 할인, 매출
 <img width="962" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/11e5aff1-08c8-48f1-9f78-f3d00decada6">
+
 2. '행'이 2개이므로 병렬로 표현하기 위해 1개의 행을 우클릭 - '이중축'
 <img width="964" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/f53e195b-6321-4422-a323-d2fc87d77e84">
