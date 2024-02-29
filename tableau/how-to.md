@@ -62,6 +62,16 @@
 3. 년도 별, 범주 별 백분율 계산 : 레이블의 매출 우클릭 - '테이블 계산 편집'에 **패널(아래로)**  
 <img width="561" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/afc75237-b6eb-401b-9e03-9633efc6b1ef">
 
+### 하이라이트 테이블
+1. (고객세그먼트)를 '열'로, (지역), (제품 카테고리)를 '행'으로 설정
+2. (매출), (수익)을 더블클릭하여 측정값으로 설정
+3. 현재 설정 된 측정값 레이블을 **'마크-색상'** 으로 **ctrl + 드랍**
+<img width="539" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/be57c1ec-7f26-4943-8a43-96bb49d31be9">
+
+4. '마크-차트종류'를 **'사각형'** 으로 설정 후 색상 측정값을 우클릭 후 **'별도의 범례 사용'**  
+<img width="191" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/799a0fa8-76e8-4dea-ae34-5c5f2dfa38c3">
+
+
 
 ### 차트 기본
 - **차트 그리기**
@@ -106,3 +116,5 @@
 
 3. 제품명이 너무 많으므로 **필터**로 **상위 10개**만 표현 : (**제품명**)을 **필터**에 드랍 - 상단탭 '상위'에서 '필드기준'에서 **'상위-10'**, **'매출-합계'** 으로 설정  
 <img width="879" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/8aa767d2-9c6d-4be7-8ff4-bdf376216ee3">
+
+
