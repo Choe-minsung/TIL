@@ -37,16 +37,16 @@
    1-1. 차트에서 직접 그룹핑하고싶은 데이터들을 드래그해서 우클릭 - **'그룹'** - 반복하여 여러 그룹 생성  
    1-2. 그룹화 할 컬럼 우클릭 후 **'만들기-그룹'** - 원하는 데이터들 shift 다중선택으로 그룹핑 - 새로 생성된 그룹컬럼을 **'열'**, **'마크-색상'** 에 드랍 - '열'의 그룹컬럼 우클릭 **'필터'** 를 통해 원하는 데이터만 선택하여 시각화  
 2. **계층** : 컬럼들을 묶어 **드릴다운**으로 펼칠 수 있게 함   
-   <img width="450" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/604d1caa-4942-4d87-b8fd-8f7ac7f68ebc">  
+   <img width="300" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/604d1caa-4942-4d87-b8fd-8f7ac7f68ebc">  
 3. **집합** : 집합화 할 컬럼 우클릭 후 **'만들기-집합'** - 원하는 조건에 따라 집합 - 새로 생성된 집합컬럼을 **'마크-색상'** 에 드랍 - 내림차순 및 범례 색상 조절  
-  <img width="450" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/76149f64-308a-4060-96af-21799398f683">
+  <img width="300" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/76149f64-308a-4060-96af-21799398f683">
 
 - **필터** : 쿼리 속도향상, 용량 절약
 1. **추출** : '데이터 원본' 탭에서 테이블 생성 - 우상단 탭 **'연결-추출'** 선택 후 **'편집-필터추가'** - 원하는 컬럼의 필터 적용
-<img width="450" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/e387a21a-7c1d-4bef-ade8-dbe44da3ac41">
+<img width="600" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/e387a21a-7c1d-4bef-ade8-dbe44da3ac41">
 
 2. **데이터원본** : '데이터 원본' 탭에서 테이블 생성 - 우상단 탭 **'연결-라이브'** 상태에서 **'필터-추가'** - 원하는 컬럼의 필터 적용
-<img width="450" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/4d25be6a-ebce-4654-b077-b3256c05dd43">
+<img width="600" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/4d25be6a-ebce-4654-b077-b3256c05dd43">
 
 3. **context** (필터 간 종속성o) : **기술** 카테고리의 **매출 상위 10개 제품명 추출**   
   3-1. (범주), (제품이름), (매출)을 더블클릭 - 필터에 (제품이름) 드랍 - **'상위'** 탭에서 **'필드기준-상위 10-매출 합계'** 확인 - 필터에 다시 (범주) 드랍 - **'기술'** 카테고리만 체크 후 확인  
@@ -69,7 +69,7 @@
 
 - **혼합**
 1. 시트에 union 할 2개의 테이블 불러오기 : 하단탭 데이터 원본에서 1개 테이블 더블클릭 - 하단탭 시트 1 - 상단탭 데이터 - 새 데이터원본 - 새 excel파일 불러오기 - 다시 하단탭 데이터 원본에서 새 테이블 더블클릭 - 하단탭 시트 1
-<img width="450" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/e6e1e299-b3a8-420e-a6d1-820b8889546e">
+<img width="150" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/e6e1e299-b3a8-420e-a6d1-820b8889546e">
 
 2. 열설정, 마크(data) 설정 : 첫번째 테이블클릭 -  열로 설정할 컬럼 '열'에 드랍 - 두번째 테이블클릭 - 마크(data)로 설정할 컬럼 '마크 - 텍스트'에 드랍
 <img width="450" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/dbf6467d-1a4b-475b-a2a8-894bdc90f07d">
@@ -98,11 +98,11 @@
 <img width="450" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/be57c1ec-7f26-4943-8a43-96bb49d31be9">
 
 4. '마크-차트종류'를 **'사각형'** 으로 설정 후 색상 측정값을 우클릭 후 **'별도의 범례 사용'**  
-<img width="450" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/799a0fa8-76e8-4dea-ae34-5c5f2dfa38c3">
+<img width="150" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/799a0fa8-76e8-4dea-ae34-5c5f2dfa38c3">
 
 ### 워드클라우드
 1. (국가/지역)을 '마크-레이블'에, (매출)을 '마크-색상'에 추가 - (국가/지역)을 **우클릭** 한 상태로 **'마크-크기'** 에 드랍 - 필드 놓기에서 **카운드(국가/지역)** 선택  
-<img width="450" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/92a1e04c-e3a8-4fe1-9a52-438628eab3b6">
+<img width="150" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/92a1e04c-e3a8-4fe1-9a52-438628eab3b6">
 
 2. '마크-표현방식' 을 '텍스트'로 변경 후 전체보기  
 <img width="450" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/a9a6f0aa-de3c-4c89-8290-ba04e7c14230">
@@ -181,10 +181,10 @@
 4. 2번째 차트의 '마크-레이블'에 매출 추가 - 두 파이차트 크기 조절 - '열'에서 2번째 차트를 **'이중축'** 설정  
 <img width="450" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/c2049b50-2ee1-40c2-819e-a48394e8a340">  
 
-5. 2번째 차트 '마크-색상' 흰색으로 변경 - 시트 빈 공간 우클릭 **'서식'** -  상단탭 **'테두리'** 의 행구분선, 열구분선의 '패널-없음' - 상단탭 **'라인'** 의 '영(0)기준선-없음' - 시트의 위 아래 **'머리글설정-해제'**
-<img width="450" alt="스크린샷 2024-03-01 101020" src="https://github.com/Choe-minsung/TIL/assets/145301343/ac375f4b-e734-4a88-872f-db66e6d181e7">  
+5. 2번째 차트 '마크-색상' 흰색으로 변경 - 시트 빈 공간 우클릭 **'서식'** -  상단탭 **'테두리'** 의 행구분선, 열구분선의 '패널-없음' - 상단탭 **'라인'** 의 '영(0)기준선-없음' - 시트의 위 아래 **'머리글설정-해제'**  
+<img width="150" alt="스크린샷 2024-03-01 101020" src="https://github.com/Choe-minsung/TIL/assets/145301343/ac375f4b-e734-4a88-872f-db66e6d181e7">  
 
-<img width="450" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/cd1c4abd-543b-45f1-9c6f-238e54e1d44e">  
+<img width="150" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/cd1c4abd-543b-45f1-9c6f-238e54e1d44e">  
 
 6. '마크-색상' - 효과 - 테두리 - 흰색  
 <img width="450" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/5c4d3eb7-337e-478a-98f4-8d47ca96eac6">  
@@ -220,6 +220,6 @@
 <img width="450" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/7f2f1bcd-f48b-4855-8ea5-48c98e53f85b">
 
 3. 고객명에 따른 필터 걸기 : (고객이름) 필터에 드랍 - 아무고객 체크 후 확인 - 필터에 생성 된 (고객이름) 우클릭 후 **'필터표시'** - 오른쪽에 표시 된 (고객이름) 필터 세모모양 클릭 - **단일 값(드롭다운)** 으로 변경   
-<img width="450" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/d7b48743-6a8e-4aa9-90f2-4d0ceb8ae9ee">
+<img width="150" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/d7b48743-6a8e-4aa9-90f2-4d0ceb8ae9ee">
 
 4. (배송형태)를 **'마크-색상'** 에 드랍
