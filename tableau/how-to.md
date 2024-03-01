@@ -122,10 +122,16 @@
 2. 내림차순 정렬 - 레이블을 구성비율로 표시  
 <img width="787" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/737d28cb-a56a-4443-ae7e-c2cca55a5dd4">  
 
-3. 총 매출을 가운데 표시하기 위해 **이중축 활용 도넛차트 생성** : '열' 빈공간에 더블클릭 - 0 입력 - ctrl로 하나 더 생성 - 2번째 차트의 '마크' 모두 삭제
+3. **총 매출을 가운데 표시**하기 위해 **이중축 활용 도넛차트 생성** : **'열' 빈공간**에 더블클릭 - **0 입력** - ctrl로 하나 더 생성 - 2번째 차트의 **'마크' 모두 삭제**  
 <img width="931" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/eb460fb7-e65a-429f-b872-e32662cb32d3">  
 
+4. 2번째 차트의 '마크-레이블'에 매출 추가 - 두 파이차트 크기 조절 - '열'에서 2번째 차트를 **'이중축'** 설정  
+<img width="887" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/c2049b50-2ee1-40c2-819e-a48394e8a340">  
 
+5. 2번째 차트 '마크-색상' 흰색으로 변경 - 시트 빈 공간 우클릭 **'서식'** -  상단탭 **'테두리'** 의 행구분선, 열구분선의 '패널-없음' - 상단탭 **'라인'** 의 '영(0)기준선-없음' - 시트의 위 아래 **'머리글설정-해제'**
+<img width="224" alt="스크린샷 2024-03-01 101020" src="https://github.com/Choe-minsung/TIL/assets/145301343/ac375f4b-e734-4a88-872f-db66e6d181e7">  
 
-4. '마크-색상' - 효과 - 테두리 - 흰색  
+<img width="220" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/cd1c4abd-543b-45f1-9c6f-238e54e1d44e">  
+
+6. '마크-색상' - 효과 - 테두리 - 흰색  
 <img width="841" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/5c4d3eb7-337e-478a-98f4-8d47ca96eac6">  
