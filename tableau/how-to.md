@@ -1,4 +1,4 @@
-# How-To Tableau
+<img width="460" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/c24f2371-c23e-44f6-b421-178c6ac50dc2"># How-To Tableau
 
 [`Tableau 도움말`](https://help.tableau.com/current/pro/desktop/ko-kr/datafields_typesandroles_datatypes.htm)  
 [`youtube - DK BMC`](https://www.youtube.com/@DKBMCOfficial)  
@@ -30,6 +30,25 @@
 4. 날짜컬럼의 **연속형(초록색)** : **병렬차트**에 필수작업! 모든 '월'을 각각 계산, 날짜컬럼 우클릭 시 아래쪽
 <img width="847" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/b980488c-2970-4df4-a114-86da25f1c391">
 
+- **데이터 표시**
+1. 그룹
+2. 계층
+3. 집합
+
+- **필터** : 쿼리 속도향상, 용량 절약
+1. 추출 : '데이터 원본' 탭에서 테이블 생성 - 우상단 탭 **'연결-추출'** 선택 후 **'편집-필터추가'** - 원하는 컬럼의 필터 적용
+<img width="1015" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/e387a21a-7c1d-4bef-ade8-dbe44da3ac41">
+
+2. 데이터원본 : '데이터 원본' 탭에서 테이블 생성 - 우상단 탭 **'연결-라이브'** 상태에서 **'필터-추가'** - 원하는 컬럼의 필터 적용
+<img width="1070" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/4d25be6a-ebce-4654-b077-b3256c05dd43">
+
+3. context (필터 간 종속성o) : **기술** 카테고리의 **매출 상위 10개 제품명 추출**   
+  3-1. (범주), (제품이름), (매출)을 더블클릭 - 필터에 (제품이름) 드랍 - **'상위'** 탭에서 **'필드기준-상위 10-매출 합계'** 확인 - 필터에 다시 (범주) 드랍 - **'기술'** 카테고리만 체크 후 확인  
+   <img width="442" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/7f0992e4-bebf-4219-971d-08f6ccec4457">  
+  3-2. *기술 카테고리의 매출 상위 10개를 보고싶은데 필터가 독립적으로 작용하여 4개만 추출 됨* : 필터에 (범주: 기술) 우클릭 후 **'컨텍스트에 추가'** - 내림차순 정렬  
+   <img width="460" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/0667a20c-3d4a-4ccf-816c-f6ca597bc488">  
+
+4. 차원 : (제품이름) 필터에 드랍 - '일반(직접 데이터 선택)', '와일드카드(LIKE 문자열)', '조건(수식)', '상위(상위 몇개)' 탭을 이용하여 원하는 조건으로 필터링o
 
 ### 데이터 결합 (컬럼 추가)
 - **관계** : 각각 테이블 더블클릭
@@ -99,7 +118,6 @@
 3. '마크-레이블'에 원하는 컬럼 드랍 : ex) 막대에 (제품카테고리)명 레이블, (매출)값 레이블 표시, 여러 레이블 순서('레이블'-'텍스트'-'...'), 레이블 표시 위치 (막대 위, 막대 안, 레이블방향 등)
 4. 레이블을 백분율로 : '행' 컬럼 우클릭 - '퀵 테이블 계산' - **구성 비율** - '테이블 계산 편집' - **테이블(아래로)** - ctrl 누른 채 레이블에도 추가
 <img width="966" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/aec39f47-7c4c-4dd7-bafa-42bfb8848a39">
-
 
 - **이중축** : 마크를 각각의 축에 개별적으로 적용 
 1. '열'에 (주문날짜), '행'에 (매출), (수익) 더블클릭으로 할당 - (주문날짜) 우클릭 후 (연속형 분기) 선택
