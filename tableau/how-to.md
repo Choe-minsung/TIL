@@ -72,7 +72,6 @@
 <img width="191" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/799a0fa8-76e8-4dea-ae34-5c5f2dfa38c3">
 
 
-
 ### 차트 기본
 - **차트 그리기**
 1. 범주컬럼 더블클릭 or '열'에 드랍
@@ -117,4 +116,16 @@
 3. 제품명이 너무 많으므로 **필터**로 **상위 10개**만 표현 : (**제품명**)을 **필터**에 드랍 - 상단탭 '상위'에서 '필드기준'에서 **'상위-10'**, **'매출-합계'** 으로 설정  
 <img width="879" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/8aa767d2-9c6d-4be7-8ff4-bdf376216ee3">
 
+### 파이차트
+1. (고객 세그먼트), (매출) 각각 더블클릭 - 우상단 탭 '표현 방식 - 파이차트' - (매출)을 '마크-레이블'에 추가 - 내림차순 정렬  
 
+2. 내림차순 정렬 - 레이블을 구성비율로 표시  
+<img width="787" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/737d28cb-a56a-4443-ae7e-c2cca55a5dd4">  
+
+3. 총 매출을 가운데 표시하기 위해 **이중축 활용 도넛차트 생성** : '열' 빈공간에 더블클릭 - 0 입력 - ctrl로 하나 더 생성 - 2번째 차트의 '마크' 모두 삭제
+<img width="931" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/eb460fb7-e65a-429f-b872-e32662cb32d3">  
+
+
+
+4. '마크-색상' - 효과 - 테두리 - 흰색  
+<img width="841" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/5c4d3eb7-337e-478a-98f4-8d47ca96eac6">  
