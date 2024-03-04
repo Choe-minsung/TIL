@@ -108,7 +108,8 @@ END
    6. *(전월대비 매출변동) 만들기*  
    6-1. (매출) 우클릭 후 **'만들기-계산된필드'** - (전월대비 매출변동)으로 필드명 작성, 계산식에 **'SUM([매출]) - LOOKUP(SUM([매출]), -1)'** (LOOKUP(expression, [offset]) : 몇번째 offset 이전/이후 값 찾기)  
    6-2. '행'에 (주문날짜/년), (주문날짜/월) 올리기 - **'마크-레이블'** 에 (매출), (전월대비 매출변동) 올려 확인하기  
-   <img width="455" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/3b9c501b-26a7-47d0-9b1c-6712dd60e688">
+   <img width="516" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/6089e096-1347-4dc2-9e23-2628042eb244">
+
 
 
 
