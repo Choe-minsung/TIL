@@ -12,7 +12,9 @@
 
 * [Tableau](#tableau)
 
-* [GA](#ga)
+* [Google Analytics](#ga)
+
+* [A/B Test](#a/b test)
 ---
 
 ### Python
@@ -33,6 +35,11 @@
 - [Practice](tableau/practice.md)
 
 
-### GA
+### Google Analytics
 
 - [How-to](ga/how-to.md)
+
+
+### A/B Test
+
+- [How-to](a/b test/how-to.md)
