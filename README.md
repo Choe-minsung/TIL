@@ -14,7 +14,7 @@
 
 * [Google Analytics](#ga)
 
-* [A/B Test](#a/b test)
+* [A/B-Test](#a/b-test)
 ---
 
 ### Python
@@ -40,6 +40,6 @@
 - [How-to](ga/how-to.md)
 
 
-### A/B Test
+### A/B-Test
 
-- [How-to](a/b test/how-to.md)
+- [How-to](a/b-test/how-to.md)
