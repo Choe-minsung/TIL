@@ -6,16 +6,27 @@
 
 ### Categories
 
+* [A/B-Test](#ab-test)
+
+* [GA](#ga)
+
 * [Python](#python)
 
 * [SQL](#sql)
 
 * [Tableau](#tableau)
 
-* [GA](#ga)
-
-* [A/B-Test](#ab-test)
 ---
+
+### A/B-Test
+
+- [How-to](ab-test/how-to.md)
+
+
+### GA
+
+- [How-to](ga/how-to.md)
+
 
 ### Python
 
@@ -34,12 +45,3 @@
 - [How-to](tableau/how-to.md)
 - [Practice](tableau/practice.md)
 
-
-### GA
-
-- [How-to](ga/how-to.md)
-
-
-### A/B-Test
-
-- [How-to](ab-test/how-to.md)
