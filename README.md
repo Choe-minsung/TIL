@@ -8,10 +8,11 @@
 
 * [Python](#python)
 
-* [PowerBI](#powerbi)
-
 * [SQL](#sql)
 
+* [Tableau](#tableau)
+
+* [GA](#ga)
 ---
 
 ### Python
@@ -30,3 +31,6 @@
 
 - [How-to](tableau/how-to.md)
 - [Practice](tableau/practice.md)
+
+
+### GA
