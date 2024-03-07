@@ -12,7 +12,7 @@
 
 * [Tableau](#tableau)
 
-* [Google-Analytics](#ga)
+* [GA](#ga)
 
 * [A/B-Test](#ab-test)
 ---
@@ -35,7 +35,7 @@
 - [Practice](tableau/practice.md)
 
 
-### Google-Analytics
+### GA
 
 - [How-to](ga/how-to.md)
 
