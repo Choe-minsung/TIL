@@ -34,3 +34,5 @@
 
 
 ### GA
+
+- [How-to](ga/how-to.md)
