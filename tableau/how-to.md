@@ -1,4 +1,4 @@
-# How-To Tableau
+<img width="421" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/7390af7d-dc48-4ad2-98f9-8daf589e3349"># How-To Tableau
 
 [`Tableau 도움말`](https://help.tableau.com/current/pro/desktop/ko-kr/datafields_typesandroles_datatypes.htm)  
 [`youtube - DK BMC`](https://www.youtube.com/@DKBMCOfficial)  
@@ -213,5 +213,46 @@ END
 <img width="450" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/7f550919-4211-488c-9f29-d856b4f0ff62">  
 
 
+### 매개변수 
+- *하위범주 별 상위 매출 N개 보기*  
+1. '행'에 (하위범주), '열'에 (매출) 드랍   
+2. 좌상단 '데이터' 탭에서 **'세모-매개 변수 만들기'** 클릭 - **'이름 : 상위제품범주, 데이터유형 : 정수, 현재 값 : 5'** 설정  
+<img width="199" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/92cce6d4-dd7f-4213-8ba9-dc6e607a36de">  
 
+3. 좌하단에 생성 된 매개변수 우클릭 후 **'매개변수표시'** 클릭 - '행'의 (하위범주) 필터로 드랍 - '상위' 탭에 **'상위-상위제품범주(만든 매개변수)-매출-합계'** 선택  
+<img width="205" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/a09a6f30-3345-42a2-b849-72d1bd8756cf">  
 
+4. 매개변수 숫자 바꿔면서 시트 확인  
+
+- *매개변수 활용 차원변경하며 매출보기*    
+1. 데이터패널에서 **'매개 변수 만들기'** - **'이름 : 차원선택하기, 데이터유형 : 문자열, 허용가능한값 : 목록'** - 값에 **'국가', '고객', '세그먼트'** 추가  
+<img width="421" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/95721398-326d-4d06-9e2a-fed922955472">  
+
+2. 생성 된 매개변수 우클릭 후 **'매개변수표시'**  
+3. 데이터패널에서 **'계산된 필드 만들기'** - **필드명 : '차원선택', 계산식 :**
+```
+CASE [차원선택하기]
+WHEN '국가' THEN [국가/지역]
+WHEN '고객' THEN [고객 이름]
+WHEN '세그먼트' THEN [세그먼트]
+END
+```
+4. 만든 계산된 필드 (차원선택)을 '행'에 드랍, '열'에 (매출) 드랍 - 시트제목 더블클릭 기존제목 모두 지우기 - **'삽입'** 탭에 **'매개변수.차원선택하기'** 클릭 - 바뀌는 차원 눈에 띄도록 색상변경 - **'<매개변수.차원선택하기>에 따른 매출'** 로 제목 완성  
+<img width="390" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/e2f6833e-3b9e-4231-bdeb-c82fdd6aeadc">  
+
+5. 차원 바꿔가며 시트 확인  
+<img width="1116" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/7348f268-45d1-4276-84cf-4a45e40cd964">  
+
+- *매개변수 활용 차원변경하며 <매개변수> 별 <매개변수> 보기*    
+1. 데이터패널에서 **'매개 변수 만들기'** - **'이름 : 측정값 선택하기, 데이터유형 : 문자열, 허용가능한값 : 목록'** - 값에 **'매출', '수량', '수익'** 추가  
+2. 생성 된 매개변수 우클릭 후 **'매개변수표시'**    
+3. 데이터패널에서 **'계산된 필드 만들기'** - **필드명 : '측정값 선택', 계산식 :**  
+```
+CASE [측정값 선택하기]
+WHEN '매출' THEN SUM([매출])
+WHEN '수량' THEN SUM([수량])
+WHEN '수익' THEN SUM([수익])
+END
+```
+4. 만든 계산된 필드 (측정값 선택)을 '열'에 드랍 - 시트제목 **'삽입'** 탭에 **'매개변수.측정값 선택하기'** 클릭 - 바뀌는 차원 눈에 띄도록 색상변경 - **'<매개변수.차원선택하기>에 따른 <매개변수.측정값 선택하기>'** 로 제목 완성  
+<img width="1120" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/c16ac1d9-16d2-43ce-a50f-9a316fbb7357">  
