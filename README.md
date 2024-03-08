@@ -43,5 +43,6 @@
 ### Tableau
 
 - [How-to](tableau/how-to.md)
-- [Practice](tableau/practice.md)
-
+- [Table](tableau/table.md)
+- [Chart](tableau/chart.md)
+- [Dashboard](tableau/dashboard.md)
