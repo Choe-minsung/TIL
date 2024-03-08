@@ -1,4 +1,4 @@
-<img width="421" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/7390af7d-dc48-4ad2-98f9-8daf589e3349"># How-To Tableau
+# How-To Tableau
 
 [`Tableau 도움말`](https://help.tableau.com/current/pro/desktop/ko-kr/datafields_typesandroles_datatypes.htm)  
 [`youtube - DK BMC`](https://www.youtube.com/@DKBMCOfficial)  
