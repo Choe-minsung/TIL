@@ -45,4 +45,5 @@
 - [How-to](tableau/how-to.md)
 - [Table](tableau/table.md)
 - [Chart](tableau/chart.md)
+- [Worksheet](tableau/worksheet.md)
 - [Dashboard](tableau/dashboard.md)
