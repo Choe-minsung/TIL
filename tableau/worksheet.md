@@ -44,3 +44,11 @@
 
 4. **'서식-음영'** : 셀의 음영 설정o  
 <img width="120" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/70729fc1-eb3e-401a-b80d-fe044e964699">
+
+5. **'서식-테두리'** : 셀의 테두리 설정o  
+<img width="150" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/f5a2de89-4d49-4bfb-84f5-b9a08e735142">
+
+6. **'서식-라인'** : 격자선, 영(0)기준선, 축 서식   
+<img width="157" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/b16cad07-458b-4e79-881a-eb22a9cb1573">
+
+
