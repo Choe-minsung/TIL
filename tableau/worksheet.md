@@ -32,3 +32,15 @@
 <img width="344" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/822e58b3-bc31-4995-b660-47c71a6ffc93">
 
 5. 모든 서식 설정 초기화 : 상단탭 **'서식-워크시트 서식 지우기'** 클릭  
+
+### 서식   
+- *서식 - 글꼴, 맞춤, 음영 실습*  
+1. '행'에 (지역), (국가/지역) 드랍, '열'에 (범주), (하위범주) 드랍 - (매출) 더블클릭 하여 '마크-텍스트' 에 올리기  
+2. 좌상단 탭 **'분석-총계'** 더블클릭 - **'서식-글꼴'** 클릭 - '시트' 탭에서 '워크시트'는 전체, '패널'은 데이터값, '머리글'은 행/열, '총계-패널'은 총계 데이터값  
+<img width="158" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/2085ba3f-d9b1-415a-8e42-8949ffb3eb8c">
+
+3. **'서식-맞춤'** : 데이터의 배열, 방향 등 설정o  
+<img width="158" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/38dfe76a-701e-40de-af2c-e4fa8ae28352">
+
+4. **'서식-음영'** : 셀의 음영 설정o  
+<img width="120" alt="image" src="https://github.com/Choe-minsung/TIL/assets/145301343/70729fc1-eb3e-401a-b80d-fe044e964699">
