@@ -1,5 +1,7 @@
 # 시간복잡도
 
+![image](https://github.com/Choe-minsung/TIL/assets/145301343/aee2bd39-1767-4b0b-a253-acf7af5ddf1e)
+
 ### 표기법
 - Big-O
 1. O(1) : 상수, n에 따라 변하지않고 항상 상수번 반복
