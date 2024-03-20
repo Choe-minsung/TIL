@@ -30,7 +30,7 @@
 
 ### Python
 
-- [Algorithm](python/algorithm.md)
+- [Time-Complexity](python/time-complexity.md)
 
 
 ### SQL
