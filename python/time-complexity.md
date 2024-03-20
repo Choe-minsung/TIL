@@ -15,4 +15,4 @@
 ex. T(n) = 2n^2 + n + 1일 경우, O(n^2)로 표현
 
 ### Dominance 순서
-O(1) < O(logn) < O(n) < O(nlogn) < O(n²) < O(cⁿ) < O(n!)
+- O(1) < O(logn) < O(n) < O(nlogn) < O(n²) < O(cⁿ) < O(n!)
