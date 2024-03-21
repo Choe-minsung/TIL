@@ -30,7 +30,7 @@
 
 ### Python
 
-- [Algorithm](백준/README.md)
+- [Algorithm](백준)
 - [Time-Complexity](python/time-complexity.md)
 
 
