@@ -36,7 +36,6 @@
 
 ### SQL
 
-- [Practice](sql/practice.md)
 - [Algorithm](프로그래머스)
 - [With](sql/with.md)
 - [Subquery](sql/subquery.md)
