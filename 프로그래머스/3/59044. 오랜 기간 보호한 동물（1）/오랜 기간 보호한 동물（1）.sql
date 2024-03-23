@@ -1,0 +1,19 @@
+-- 코드를 입력하세요
+
+# case 1) EXCEPT 차집합 사용 : 실패
+# SELECT NAME, DATETIME
+#     FROM (SELECT NAME, DATETIME
+#     FROM ANIMAL_INS
+# EXCEPT
+# SELECT NAME, DATETIME
+#     FROM ANIMAL_OUTS) AS T
+#     ORDER BY DATETIME
+#     LIMIT 3;
+    
+# case 2) LEFT JOIN : 성공
+SELECT I.NAME, I.DATETIME
+    FROM ANIMAL_INS AS I
+    LEFT JOIN ANIMAL_OUTS AS O ON I.ANIMAL_ID = O.ANIMAL_ID  # LEFT JOIN으로 차집합 계산
+    WHERE O.ANIMAL_ID IS NULL   # 입양을 못 간 동물
+    ORDER BY I.DATETIME   # 보호 시작일 순으로 조회
+    LIMIT 3;  # 상위 3개만 조회
