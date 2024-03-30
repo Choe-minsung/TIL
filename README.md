@@ -48,3 +48,4 @@
 - [Chart](tableau/chart.md)
 - [Worksheet](tableau/worksheet.md)
 - [Dashboard](tableau/dashboard.md)
+- [Story](tableau/story.md)
