@@ -49,3 +49,4 @@
 - [Worksheet](tableau/worksheet.md)
 - [Dashboard](tableau/dashboard.md)
 - [Story](tableau/story.md)
+- [Snowflake](tableau/snowflake.md)
