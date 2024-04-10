@@ -12,6 +12,8 @@
 
 * [Python](#python)
 
+* [RFM](#rfm)
+
 * [SQL](#sql)
 
 * [Tableau](#tableau)
@@ -33,6 +35,10 @@
 - [Algorithm](백준)
 - [Time-Complexity](python/time-complexity.md)
 
+
+### RFM
+- [What is RFM?][rfm/what is rfm?.md)
+- [Dacon-competition](rfm/dacon-competition.md)
 
 ### SQL
 
