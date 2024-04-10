@@ -37,7 +37,7 @@
 
 
 ### RFM
-- [What-is-RFM][rfm/what-is-rfm.md)
+- [What-is-RFM](rfm/what-is-rfm.md)
 - [Dacon-competition](rfm/dacon-competition.md)
 
 ### SQL
