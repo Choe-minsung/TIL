@@ -6,9 +6,9 @@ RFM is a method used for analyzing customer value. It is commonly used in databa
 
 RFM stands for the three dimensions:
 
-1. Recency – How recently did the customer purchase?
-2. Frequency – How often do they purchase?
-3. Monetary Value – How much do they spend?
+1. **Recency(최근에)** : How recently did the customer purchase?
+2. **Frequency(얼마나 자주)** : How often do they purchase?
+3. **Monetary Value(얼마나 많이)** : How much do they spend?
 
 
 ### Classification criteria
