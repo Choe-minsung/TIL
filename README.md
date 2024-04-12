@@ -41,6 +41,7 @@
 ### CRM
 - [RFM](rfm/what-is-rfm.md)
 - [Customer-Segmentation](rfm/customer-segmentation.md)
+- [Cohort](rfm/cohort.md)
 - [Dacon-competition](rfm/dacon-competition.md)
 
 ### SQL
