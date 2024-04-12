@@ -38,8 +38,8 @@
 - [Feature-Engineering](python/feature-engineering.md)
 
 
-### RFM
-- [What-is-RFM](rfm/what-is-rfm.md)
+### CRM
+- [RFM](rfm/what-is-rfm.md)
 - [Customer-Segmentation](rfm/customer-segmentation.md)
 - [Dacon-competition](rfm/dacon-competition.md)
 
