@@ -34,6 +34,7 @@
 
 - [Algorithm](백준)
 - [Time-Complexity](python/time-complexity.md)
+- [EDA](python/eda.md)
 - [Feature-Engineering](python/feature-engineering.md)
 
 
