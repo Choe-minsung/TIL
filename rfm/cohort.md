@@ -1,6 +1,6 @@
 # Cohort Analysis
 
-[`Online Retail dataset (kaggle)`](https://www.kaggle.com/code/ahmetokanyilmaz/cohort-analysis-with-python)
+[`Online Retail dataset (kaggle)`](https://www.merriam-webster.com/dictionary/cohort)
 
 
 ### Why Cohort?
