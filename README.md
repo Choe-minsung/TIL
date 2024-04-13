@@ -43,7 +43,8 @@
 - [Customer-Segmentation](rfm/customer-segmentation.md)
 - [Cohort](rfm/cohort.md)
 - [Cohort-kaggle](rfm/cohort-kaggle.md)
-- [Cohort-dacon](rfm/dacon-competition.md)
+- [CRM](rfm/crm.md)
+- [CRM-dacon](rfm/crm-dacon.md)
 
 ### SQL
 
