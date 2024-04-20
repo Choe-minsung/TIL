@@ -6,6 +6,8 @@
 
 ### Categories
 
+* [AI](#ai)
+
 * [A/B-Test](#ab-test)
 
 * [GA](#ga)
@@ -19,6 +21,15 @@
 * [Tableau](#tableau)
 
 ---
+
+### AI
+
+- [Text](ai/text.md)
+- [Image](ai/image.md)
+- [Video](ai/video.md)
+- [LLM](ai/llm.md)
+- [LMM](ai/lmm.md)
+
 
 ### A/B-Test
 
