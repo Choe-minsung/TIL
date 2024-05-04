@@ -29,6 +29,7 @@
 - [Video](ai/video.md)
 - [LLM](ai/llm.md)
 - [LMM](ai/lmm.md)
+- [AutoML](ai/automl.md)
 
 
 ### A/B-Test
