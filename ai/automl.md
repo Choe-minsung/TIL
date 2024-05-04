@@ -24,7 +24,23 @@
 
 [`HD현대 AI Challenge`](https://dacon.io/competitions/official/236158/codeshare/9222?page=1&dtype=recent)
 
-### 1. Pycaret
+### Pycaret
 [`PyCaret docs`](https://pycaret.gitbook.io/docs)  
 [`PyCaret setup`](https://pycaret.readthedocs.io/en/latest/api/regression.html)
 
+```
+# install PaCaret
+!pip install pycaret
+!pip install markupsafe == 2.0.1
+```
+
+```
+from pycaret.regression import *
+setup_reg = setup(data = train, target = 'CI_HOUR', train_size = .8, session_id = 42, fold = 5)
+```
+![image](https://github.com/Choe-minsung/TIL/assets/145301343/9cb35dde-7527-4426-9b4a-2336370acee7)
+
+```
+best = compare_models(sort = 'mae')
+```
+![image](https://github.com/Choe-minsung/TIL/assets/145301343/b2574840-26d2-413b-860e-3e0bf7c06449)
