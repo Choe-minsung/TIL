@@ -24,6 +24,7 @@
 
 ### AI
 
+- [Feature-Engineering](ai/feature-engineering.md)
 - [Text](ai/text.md)
 - [Image](ai/image.md)
 - [Video](ai/video.md)
