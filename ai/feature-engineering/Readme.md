@@ -7,6 +7,6 @@
 - datasets - train, test 둘 다 적용시켜야 함
 
 ---
-# Feature Engineering 실습
+# EDA ~ CDA ~ Feature Engineering ~ ML pred 실습
 [`Kaggle : Titanic`](https://www.kaggle.com/competitions/titanic/overview)
 
