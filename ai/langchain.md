@@ -31,6 +31,8 @@
 
 ### LangChain과 연결
 [`langchain_community`](https://api.python.langchain.com/en/latest/llms/langchain_community.llms.ollama.Ollama.html)
+
+- Web code
 ```
 !pip install langchain-community langchain-core
 %%writefile app.py
@@ -76,5 +78,5 @@ display_chat_history()
 !streamlit run app.py
 ```
 
-
+- test
 ![image](https://github.com/Choe-minsung/TIL/assets/145301343/1bd667b3-3689-4869-93dc-25da99d8ffe0)
