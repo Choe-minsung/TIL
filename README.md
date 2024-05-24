@@ -29,6 +29,7 @@
 - [Image](ai/image.md)
 - [Video](ai/video.md)
 - [LLM](ai/llm.md)
+- [Langchain](ai/langchain.md)
 - [LMM](ai/lmm.md)
 - [AutoML](ai/automl.md)
 
